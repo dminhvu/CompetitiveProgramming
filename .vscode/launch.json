@@ -5,6 +5,21 @@
 "version": "0.2.0",
 "configurations": [
     {
+        "name": "Launch Program",
+        "program": "${workspaceFolder}/app.js",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node"
+    },
+    {
+        "type": "java",
+        "name": "Java: Current File",
+        "request": "launch",
+        "mainClass": "${file}"
+    },
+    {
         "name": "Python: Current File",
         "type": "python",
         "request": "launch",

@@ -1,1 +1,1 @@
-using System;
+console.log('Hello, World!');
