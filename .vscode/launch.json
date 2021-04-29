@@ -5,17 +5,23 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Current File",
+      "type": "java",
+      "name": "Java: Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "name": "Python: Launch Current File",
       "type": "python",
       "request": "launch",
       "program": "${file}",
       "console": "integratedTerminal"
     },
     {
-      "name": "g++ - Build and debug active file",
+      "name": "C/C++: Launch Current File",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/temp.o",
+      "program": "${workspaceFolder}/a.out",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
