@@ -6,9 +6,7 @@
 *.exe
 *.o
 *.so
-*.out
-test.*
-Test.*
+
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
@@ -37,3 +35,10 @@ Test.*
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
+*
+!/**/
+!*.*
+*.out
+test.*
