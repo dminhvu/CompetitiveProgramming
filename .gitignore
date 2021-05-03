@@ -1,3 +1,5 @@
+test.cpp
+
 # Compiled source #
 ###################
 *.com
@@ -41,4 +43,3 @@ Thumbs.db
 !/**/
 !*.*
 *.out
-test.*
