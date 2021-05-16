@@ -6,7 +6,7 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Java: Launch Current File",
+      "name": "Launch Current File",
       "request": "launch",
       "mainClass": "${file}"
     },
@@ -36,7 +36,7 @@
         }
       ],
       "preLaunchTask": "cpprun",
-      "miDebuggerPath": "/usr/bin/gdb",
+      "miDebuggerPath": "/usr/bin/gdb"
     }
   ]
 }
