@@ -1,5 +1,4 @@
-test.cpp
-
+*.out
 # Compiled source #
 ###################
 *.com
@@ -42,6 +41,5 @@ Thumbs.db
 *
 !/**/
 !*.*
-*.out
 *.exe
-FPT
+*.out
