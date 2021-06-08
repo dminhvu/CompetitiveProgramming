@@ -1,23 +1,10 @@
-def calc(n):
-    dp = [0]
-    sq = []
-    for i in range(1,n+1):
-        if i * i > n:
-            break
-        sq.append(i * i)
-    for i in range(1,n+1):
-        can_win = 0
-        for j in sq:
-            if j > i:
-                break
-            can_win |= dp[i - j] == 0
-        dp.append(can_win)
-    for i in range(len(dp)):
-        print(i,end=' ')
-    print()
-    for i in dp:
-        print(i,end=' ')
-    print()
-    return dp[-1] == 1
+def forward_propagate(nums_iteration,learning_rate):
+    x = 5
+    for _ in range(1,nums_iteration+1):
+        dy = 2 * x + 6
+        x -= learning_rate * dy
+        if _ % 10 == 0:
+            print(x)
 
-print(calc(20))
+forward_propagate(100,0.3)
+
