@@ -28,7 +28,7 @@ void bfs(int u){
 
 int main(){
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    freopen("input.txt","r",stdin);
+    // freopen("input.txt","r",stdin);
     cin >> n >> m;
     for(int i=0; i<m; i++){
         int u, v; cin >> u >> v;
