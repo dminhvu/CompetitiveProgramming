@@ -9,27 +9,26 @@ using namespace std;
 template<class t, class u> bool maxi(t &a, u b){ if (a < b){ a = b; return 1;} return 0;}
 template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} return 0;}
 
-int fun(int x, int y, int z) {
-    int k = 2 * x + 3 * y + 5 * z;
-    return k % 13;
-}
-
-void foo(int *p, int *q) {
-    int t = *p;
-    *p = *q; 
-    *q = t;
-}
-
-int fu(int *p, int *q) {
-    int t = (*p) + (*q) > 12 ? 5 : 6;
-    cout << *p << " ";
-    cout << t << '\n';
-    return 2 * t % 5;
-}
-
 int main() {
+    // freopen64("input.txt","r",stdin);
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    int a = 3, b = 4;
-    cout << fu(&a, &b);
+    int n, q; cin >> n >> q;
+    vector<int> pos(50, -1);
+    rep(i,n) {
+        int c; cin >> c;
+        --c;
+        if (pos[c] == -1) {
+            pos[c] = i;
+        }
+    }
+    while (q--) {
+        int c; cin >> c;
+        --c;
+        cout << pos[c] + 1 << " ";
+        rep(i,50) {
+            if (pos[i] != -1 && pos[i] < pos[c]) pos[i]++;
+        }
+        pos[c] = 0;
+    }
     return 0;
 }
