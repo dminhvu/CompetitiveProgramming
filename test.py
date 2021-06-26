@@ -1,10 +1,8 @@
-def forward_propagate(nums_iteration,learning_rate):
-    x = 5
-    for _ in range(1,nums_iteration+1):
-        dy = 2 * x + 6
-        x -= learning_rate * dy
-        if _ % 10 == 0:
-            print(x)
+lmb = 0.8
+A = 12
+t = 3600
+l = 0.3
+deltaT = 24
 
-forward_propagate(100,0.3)
-
+Q = lmb * (A * t * deltaT)/l
+print("Q = \u03BB {}".format(round(Q/1000)))

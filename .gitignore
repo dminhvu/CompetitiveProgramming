@@ -1,4 +1,5 @@
 *.out
+*.csv
 # Compiled source #
 ###################
 *.com
