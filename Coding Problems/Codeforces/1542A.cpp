@@ -10,8 +10,21 @@ template<class t, class u> bool maxi(t &a, u b){ if (a < b){ a = b; return 1;} r
 template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} return 0;}
 
 int main() {
-   ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-   int x = 7 / 9 * 9;
-   printf("%d",x);
-   return 0;
+    // freopen64("input.txt","r",stdin);
+    ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+    int nTest; cin >> nTest;
+    while (nTest--) {
+        int n; cin >> n;
+        vector<int> cnt(2, 0);
+        rep(i,2*n) {
+            int x; cin >> x;
+            cnt[x % 2]++;
+        }
+        if (cnt[0] == cnt[1]) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+    return 0;
 }
