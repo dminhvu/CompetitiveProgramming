@@ -5,29 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "Launch Current File",
-      "request": "launch",
-      "mainClass": "${file}"
-    },
-    {
-      "name": "Python: Launch Current File",
+      "name": "Python: Current File",
       "type": "python",
       "request": "launch",
       "program": "${file}",
       "console": "integratedTerminal"
     },
+
     {
-      "name": "C/C++: Launch Current File",
+      "name": "g++.exe - Build and debug active file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/a.out",
+      "program": "${workspaceFolder}\\a.exe",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
+      "miDebuggerPath": "D:\\Apps\\MinGW\\mingw64\\bin\\gdb.exe",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
@@ -35,8 +31,7 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "cpprun",
-      "miDebuggerPath": "/usr/bin/gdb"
+      "preLaunchTask": "C/C++: g++.exe build active file"
     }
   ]
 }
