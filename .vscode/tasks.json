@@ -8,10 +8,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${workspaceFolder}\\a.exe"
+                "${workspaceFolder}\\test.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
