@@ -1,3 +1,4 @@
+.vscode/*.json
 */.ipynb_checkpoints/*.ipynb
 .ipynb_checkpoints/*.ipynb
 *.code-workspace
