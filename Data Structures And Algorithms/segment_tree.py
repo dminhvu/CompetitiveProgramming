@@ -1,5 +1,3 @@
-import math
-
 class SegmentTree:
 
     def __init__(self,nums):
