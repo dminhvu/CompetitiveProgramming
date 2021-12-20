@@ -1,3 +1,9 @@
+'''
+References: 
+1. https://vnoi.info/wiki/algo/data-structures/segment-tree-extend.md
+2. https://cp-algorithms.com/data_structures/segment_tree.html
+'''
+
 class SegmentTree:
 
     def __init__(self,nums):

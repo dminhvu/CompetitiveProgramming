@@ -1,3 +1,8 @@
+'''
+References:
+1. https://vnoi.info/wiki/algo/data-structures/data-structures-overview.md#2-1-m%E1%BA%A3ng-c%E1%BB%99ng-d%E1%BB%93n-prefix-sum
+'''
+
 class PrefixSum:
     def __init__(self,nums):
         self.num_of_elements = len(nums)
