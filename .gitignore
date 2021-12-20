@@ -4,6 +4,7 @@
 *.code-workspace
 *.out
 *.csv
+*.vscode
 # Compiled source #
 ###################
 *.com
