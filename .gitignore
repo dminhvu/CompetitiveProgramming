@@ -5,6 +5,7 @@
 *.out
 *.csv
 *.vscode
+input.txt
 # Compiled source #
 ###################
 *.com
