@@ -11,6 +11,6 @@ template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} r
 
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    cout << "Hello, World!\n";
+    cout << "Hello, World!";
     return 0;
 }
