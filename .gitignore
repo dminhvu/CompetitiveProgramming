@@ -1,15 +1,11 @@
-.vscode/tasks.json
-*/*.ini
-*/*.json
 */.ipynb_checkpoints/*.ipynb
 .ipynb_checkpoints/*.ipynb
 *.code-workspace
 *.out
 *.csv
-.vscode/*
-.vscode/*.json
-.vscode/
-input.txt
+test.cpp
+testGen.cpp
+test.py
 # Compiled source #
 ###################
 *.com
