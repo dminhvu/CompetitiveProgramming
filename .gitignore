@@ -1,4 +1,5 @@
 .vscode/tasks.json
+*/*.ini
 */*.json
 */.ipynb_checkpoints/*.ipynb
 .ipynb_checkpoints/*.ipynb
