@@ -11,6 +11,14 @@ template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} r
 
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    
+    int nTest; cin >> nTest;
+    while (nTest--) {
+        int n; cin >> n;
+        int ans = 0;
+        ans += sqrt(n);
+        ans += cbrt(n);
+        ans -= int(cbrt(int(sqrt(n))));
+        cout << ans << '\n';
+    }
     return 0;
 }
