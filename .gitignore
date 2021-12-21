@@ -1,5 +1,5 @@
-
-**/*.json
+.vscode/tasks.json
+*/*.json
 */.ipynb_checkpoints/*.ipynb
 .ipynb_checkpoints/*.ipynb
 *.code-workspace
