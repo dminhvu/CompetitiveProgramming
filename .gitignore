@@ -1,11 +1,11 @@
+test.cpp
+testGen.cpp
+test.py
 */.ipynb_checkpoints/*.ipynb
 .ipynb_checkpoints/*.ipynb
 *.code-workspace
 *.out
 *.csv
-test.cpp
-testGen.cpp
-test.py
 # Compiled source #
 ###################
 *.com
