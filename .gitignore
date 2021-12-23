@@ -3,6 +3,8 @@
 **/*.csv
 *.exe
 *.txt
+test.cpp
+test.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
