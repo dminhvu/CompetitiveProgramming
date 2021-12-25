@@ -14,22 +14,17 @@ int main() {
     // freopen("input.txt","r",stdin);
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int q; cin >> q;
-    int cnt = 0;
     vector<vector<int> > query(q);
-    int max_element = 0;
     rep(i,q) {
         int t; cin >> t;
         query[i].push_back(t);
         if (t == 1) {
             int u; cin >> u;
             query[i].push_back(u);
-            max_element = max(max_element, u);
         } else {
             int u, v; cin >> u >> v;
             query[i].push_back(u);
             query[i].push_back(v);
-            max_element = max(max_element, u);
-            max_element = max(max_element, v);
         }
     }
     vector<int> par(N), ans;
