@@ -5,6 +5,8 @@
 *.txt
 test.cpp
 test.py
+prepare.py
+run.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
