@@ -66,7 +66,7 @@ void Solve()
 int main()
 {
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    freopen("input.txt","r",stdin);
+    // freopen("input.txt","r",stdin);
     int nTest; cin >> nTest;
     while (nTest--) Solve();
 

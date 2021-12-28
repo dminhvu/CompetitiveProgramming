@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
- 
+
 using namespace std;
- 
+
 int ask(int l, int r) {
     if (l >= r) return -1;
     cout << "? " << l << " " << r << '\n';
@@ -9,7 +9,7 @@ int ask(int l, int r) {
     int ans; cin >> ans;
     return ans;
 }
- 
+
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int n; cin >> n;
