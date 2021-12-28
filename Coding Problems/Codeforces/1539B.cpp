@@ -10,7 +10,7 @@ template<class t, class u> bool maxi(t &a, u b){ if (a < b){ a = b; return 1;} r
 template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} return 0;}
 
 int main() {
-    freopen64("input.txt","r",stdin);
+    // freopen64("input.txt","r",stdin);
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int n, q; cin >> n >> q;
     string s; cin >> s;

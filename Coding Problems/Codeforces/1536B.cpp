@@ -29,7 +29,7 @@ string inc(string s) {
 }
 
 int main() {
-    freopen64("input.txt","r",stdin);
+    // freopen64("input.txt","r",stdin);
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int nTest; cin >> nTest;
     while (nTest--) {
