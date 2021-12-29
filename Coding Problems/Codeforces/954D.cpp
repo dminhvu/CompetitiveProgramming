@@ -28,7 +28,7 @@ void bfs(int x, int dist[]){
 
 int main(){
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    freopen("input.txt","r",stdin);
+    // freopen("input.txt","r",stdin);
     cin >> n >> m >> s >> t;
     memset(a,0,sizeof a);
     for(int i=0; i<m; i++){

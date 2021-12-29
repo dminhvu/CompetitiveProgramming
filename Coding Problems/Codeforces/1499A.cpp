@@ -12,7 +12,7 @@ using namespace std;
 template<class t, class u> bool maxi(t &a, u b){ if (a < b){ a = b; return 1;} return 0;}
 template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} return 0;}
 
-int main() {/*
+int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int t; cin >> t;
     while (t--) {
@@ -34,10 +34,4 @@ int main() {/*
         else cout << "NO\n";
     }
     return 0;
-    */
-   int x = 0, y = 99;
-   for (int i = 1; i <= 100; i++) {
-       x = x + i;
-   }
-    cout << x;
-   }
+}

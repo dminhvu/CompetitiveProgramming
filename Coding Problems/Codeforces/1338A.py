@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input.txt','r')
+# sys.stdin = open('input.txt','r')
 input = sys.stdin.readline
 inf = int(1e9)
 
