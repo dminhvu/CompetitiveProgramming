@@ -16,33 +16,38 @@ int main() {
     int nTest; cin >> nTest;
     while (nTest--) {
         int n; cin >> n;
-        int l = inf, r = -inf;
-        int posl = 0, posr = 0;
-        int costl = inf, costr = inf;
-        int maxlen = 0, costlen = inf;
-        int ans = inf;
+        int l = inf, r = 0;
+        int posl = -1, posr = -1;
+        vector<tuple<int, int, int> > a;
+        int ans = 0;
         rep(i,n) {
-            int x, y, c; cin >> x >> y >> c;
+            int x, y, z; cin >> x >> y >> z;
+            a.push_back({x, y, z});
             if (x < l) {
+                if (posl != -1) {
+                    ans -= get<2>(a[posl]);
+                }
+                ans += z;
+                posl = i;
                 l = x;
-                costl = inf;
+            } else if (x == l) {
+                if (z < get<2>(a[posl])) {
+                    posl = i;
+                }
             }
-            if (l == x) costl = min(costl, c);
-            if (y > r) {
-                r = y;
-                costr = inf;
-            }
-            if (y == r) costr = min(costr, c);
 
-            if (y - x + 1 > maxlen) {
-                maxlen = r - l + 1;
-                costlen = inf;
-            }    
-            if (y - x + 1 == maxlen) {
-                costlen = min(costlen, c);
+            if (y > r) {
+                if (posr != -1) {
+                    ans -= get<2>(a[posr]);
+                }
+                ans += z;
+                posr = i;
+                r = y;
+            } else if (y == r) {
+                if (z < get<2>(a[posr])) {
+                    posr = i;
+                }
             }
-            int ans = costl + costr;
-            if (r - l + 1 == maxlen) ans = min(ans, costlen);
             cout << ans << '\n';
         }
     }
