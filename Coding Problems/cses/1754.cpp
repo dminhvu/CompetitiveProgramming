@@ -11,14 +11,10 @@ template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} r
 
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    int n; cin >> n;
-    fore(i,1,n) {
-        if (i == 1) cout << 0 << '\n';
-        else {
-            ll ans = 1ll * i * i * (1ll * i * i - 1) / 2ll;
-            ans -= 4ll * (i - 1) * (i - 2);
-            cout << ans << '\n';
-        }
+    int T; cin >> T;
+    while (T--) {
+        int a, b; cin >> a >> b;
+        cout << ((a + b) % 3 == 0 && 2 * a >= b && 2 * b >= a ? "YES" : "NO") << '\n';
     }
     return 0;
 }

@@ -12,12 +12,24 @@ template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} r
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int n; cin >> n;
-    fore(i,1,n) {
-        if (i == 1) cout << 0 << '\n';
-        else {
-            ll ans = 1ll * i * i * (1ll * i * i - 1) / 2ll;
-            ans -= 4ll * (i - 1) * (i - 2);
-            cout << ans << '\n';
+    queue<string> q;
+    string start = "";
+    rep(i,n) start += "0";
+    map<string, int> vis;
+    vis[start] = 1;
+    q.push(start);
+    while (q.size()) {
+        string cur = q.front();
+        cout << cur << '\n';
+        q.pop();
+        rep(i,n) {
+            string tmp = cur;
+            tmp[i] = (1 - (tmp[i] - '0') + '0');
+            if (!vis[tmp]) {
+                q.push(tmp);
+                vis[tmp] = 1;
+                break;
+            }
         }
     }
     return 0;

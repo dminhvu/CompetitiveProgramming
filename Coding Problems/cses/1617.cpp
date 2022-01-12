@@ -8,17 +8,16 @@
 using namespace std;
 template<class t, class u> bool maxi(t &a, u b){ if (a < b){ a = b; return 1;} return 0;}
 template<class t, class u> bool mini(t &a, u b){ if (a > b){ a = b; return 1;} return 0;}
+const ll MOD = 1e9 + 7;
 
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
     int n; cin >> n;
+    ll ans = 1;
     fore(i,1,n) {
-        if (i == 1) cout << 0 << '\n';
-        else {
-            ll ans = 1ll * i * i * (1ll * i * i - 1) / 2ll;
-            ans -= 4ll * (i - 1) * (i - 2);
-            cout << ans << '\n';
-        }
+        ans *= 2ll;
+        ans %= MOD;
     }
+    cout << ans;
     return 0;
 }
